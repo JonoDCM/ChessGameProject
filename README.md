@@ -1,8 +1,6 @@
 # Chess Game Implementation with Python and Tkinter
 
-# Brief Explanation of Chess and Tkinter
-
-# Chess Logic:  
+### Chess Logic:  
 Chess is a strategy game where two players move pieces on an 8x8 grid. The goal is to checkmate the opponent's king. This project focuses on the basic chess rules with checkmate being the only special condition to win the game. The movement of pieces is standard:
 
 - **Pawns** move forward but capture diagonally.
@@ -12,47 +10,47 @@ Chess is a strategy game where two players move pieces on an 8x8 grid. The goal 
 - **Queens** combine the movements of rooks and bishops.
 - **Kings** move one square in any direction.
 
-# Tkinter:  
+### Tkinter:  
 Tkinter is the standard GUI library for Python. It is used to create windowed applications with buttons, labels, canvases, and other elements. For this project, Tkinter will be used to display the chessboard, pieces, and menus while processing user interactions such as selecting and moving pieces.
 
-# Project Overview
+### Project Overview
 
 In this project, we’re developing a chess game using Python and Tkinter, combining basic chess mechanics with a simple, interactive graphical interface. Tkinter will handle the window, buttons, and other visual elements, while Python will manage the game logic, ensuring a smooth and enjoyable experience for players.
 
-# Setting Up Tkinter
+### Setting Up Tkinter
 
 Tkinter will allow us to handle the graphics and input events. It will display the chessboard, pieces, and menus while enabling user interaction via mouse or keyboard.
 
-# Customizable Chessboard
+### Customizable Chessboard
 
 We will set up the chessboard as an 8x8 grid using Tkinter’s `Canvas` widget. Players can customize the colors of the squares, making the game feel more personalized without affecting the core gameplay.
 
-# Representing the Chess Pieces
+### Representing the Chess Pieces
 
 Each chess piece will be represented by an image, loaded onto the chessboard using Tkinter. Internally, we will use a 2D list to track the positions of the pieces.
 
-# Game Logic
+### Game Logic
 
 - **Piece movements**: Each piece follows its standard movement.
 - **Turn-based gameplay**: Players take turns moving one piece at a time, with valid moves for each piece.
 - **Game ending**: The game ends when a player checkmates the opponent’s king.
 
-# User Interaction
+### User Interaction
 
 - **Mouse**: Select and move pieces by clicking on them and dragging them to new squares.
 - **Keyboard**: Players can type in moves using chess notation, such as E2-E4.
 - **Voice**: Voice recognition allows players to issue commands like “Move the pawn from E2 to E4.”
 - **Text input**: Players can type their moves directly into a text input field.
 
-# Game Mode
+### Game Mode
 
 - **Player vs Player**: Two players take turns on the same device.
 
-# Game End
+### Game End
 
 The game ends when a player checkmates the opponent’s king.
 
-# Class Implementations
+### Class Implementations
 
 The main classes for this game will include:
 
@@ -64,26 +62,26 @@ The main classes for this game will include:
 - **InputHandler**: Manages all types of input from the user (mouse, keyboard, voice).
 - **UI**: Responsible for drawing the board, pieces, menus, and game messages to the screen using Tkinter.
 
-# Visual Design
+## Visual Design
 
-# Main Menu
+### Main Menu
 
 The main menu allows players to customize their gameplay experience with the following options:
 
-- # Game Mode Selection:
+- ### Game Mode Selection:
   - 1 vs 1: Two players compete on the same device.
   - Modes are represented with buttons or icons.
   
-- # Style Customization:
+- ### Style Customization:
   - Choose from four unique chessboard themes: Baby (bright and playful), Wood (classic wooden design), Spooky (dark and mysterious), and Nightly (sleek, modern aesthetic).
   
-- # Language Options:  
+- ### Language Options:  
   - Supported languages: English, Spanish, and Turkish.
   - Players can select their preferred language using flag icons or dropdown menus.
 
-# In-Game Interface
+### In-Game Interface
 
-- # Interactive Gameplay:
+- ### Interactive Gameplay:
   - Multiple input methods:
     - Mouse: Traditional click-to-select and move functionality.
     - Voice Assistance: Players can give commands like “Move A2 to A4,” and the system will prompt for confirmation: “Are you sure you want to move A2 to A4?”
@@ -91,24 +89,24 @@ The main menu allows players to customize their gameplay experience with the fol
   
   - The game highlights valid moves when a piece is selected, ensuring clarity during gameplay.
 
-- # Turn Indication:  
+- ### Turn Indication:  
   - Turns are displayed in the format `(1. W1 ; B2.)`, where:
     - `W` represents White’s move.
     - `B` represents Black’s move.
     - The number indicates the turn sequence.
 
-- # Top Menu Bar:
+- ### Top Menu Bar:
   - The top of the game window includes a menu bar with these options:
     - Home: Return to the game’s main interface.
     - Main Menu: Navigate back to the main menu for customization or to start a new game.
     - Game Rules: Access detailed chess rules and gameplay instructions.
     - Exit: Close the game.
 
-# Modern Aesthetic
+### Modern Aesthetic
 
 The chessboard styles and pieces will adapt to the selected theme, ensuring a visually engaging experience. Tkinter’s features allow for easy customization of colors, fonts, and images to match the selected theme.
 
-# Game Rules Window
+### Game Rules Window
 
 The game includes a dedicated **Game Rules Window**, accessible from the top menu bar. This window provides:
 
@@ -118,14 +116,14 @@ The game includes a dedicated **Game Rules Window**, accessible from the top men
 
 All game rules are available in the three supported languages: English, Spanish, and Turkish.
 
-# Features and Customizations
+### Features and Customizations
 
 - **Cross-Language Support**: Players can switch between English, Spanish, and Turkish seamlessly.
 - **Customizable Board Styles**: Choose from four unique themes to suit your preferences.
 - **Multiple Input Methods**: Play using mouse, voice commands, or keyboard instructions.
 - **Dynamic Visuals**: The game highlights valid moves and updates themes based on player preferences.
 
-## Chess Game Main Menu Implementation
+### Chess Game Main Menu Implementation
 
 This script is responsible for creating the main menu of the chess game. It provides players with an interactive and visually appealing 
 interface to customize their gameplay experience. The main menu allows players to configure game settings such as game mode, board 
@@ -150,7 +148,7 @@ Baby, Wood, Spooky, Nightly, and Love styles.
 - Clean, modern UI with responsive design elements.
 - Enhanced by visual decorations and user-friendly icons.
 
-Technical Implementation
+### Technical Implementation
 
 1. Dynamic Paths:
 - The menu dynamically loads images and assets using relative paths, ensuring compatibility across systems.
@@ -166,7 +164,7 @@ Technical Implementation
 - Integrated with Pillow (PIL) for image scaling and rendering.
 - The menu includes decorative corner images to enhance visual appeal.
 
-How the Code Works
+### How the Code Works
 
 1. Main Menu Initialization (main_menu):
 
@@ -189,7 +187,7 @@ How the Code Works
 - Decorative elements like corner images are integrated using ImageTk.PhotoImage.
 - Fullscreen mode is achieved with state("zoomed").
 
-Functions and Their Roles
+### Functions and Their Roles
 
 1. main_menu():
 
@@ -207,11 +205,11 @@ Functions and Their Roles
 - Dynamically adjusts UI based on the selected game mode.
 - Passes player names, board style, and language to the game startup process.
 
-## Game Rules Explanation
+### Game Rules Explanation
 
 The create_window_with_pages() function creates a graphical user interface (GUI) application using Python's tkinter library. The application serves as an interactive information display with multiple pages, each containing an image.
 
-Functionality Overview
+### Functionality Overview
 
 1. Window Initialization and Centering
 
@@ -250,23 +248,23 @@ Functionality Overview
 
 - The root.mainloop() call starts the Tkinter event loop, keeping the application window open and responsive.
 
-Use Case
+### Use Case
 
 This function is ideal for creating informational applications with an image-based navigation system. The example implementation displays chess-related content, but it can be easily adapted for other purposes by modifying the image_files dictionary.
 
-Key Libraries Used
+### Key Libraries Used
 
 1. tkinter: For creating the GUI.
 2. ttk: Provides a modern-themed tabbed interface (ttk.Notebook).
 3. Pillow (PIL): For image manipulation and resizing.
 4. os: To handle file paths and directory traversal.
 
-Error Handling
+### Error Handling
 
 - The script verifies that all required image files are located.
 - If a file is missing, an error message is printed, and the program exits gracefully.
 
-## Chess Game Implementation
+### Chess Game Implementation
 
 This class is responsible for setting up and managing the entire chess game. It handles board rendering, piece management, and game
 state (including saving and loading). The class provides a GUI with buttons for interaction and labels for displaying game status.
@@ -317,7 +315,7 @@ Switches between Light Mode and Dark Mode for the user interface. This affects t
 - exit_action():
 Closes the game when the "Exit" menu option is selected.
 
-Menu System:
+### Menu System:
 
 The menu bar provides several options:
 
@@ -327,7 +325,7 @@ The menu bar provides several options:
 - Change View: Switch between Light and Dark modes.
 - Exit: Closes the game.
 
-User Interface:
+### User Interface:
 
 - Chessboard: A grid of 8x8 buttons represents the chessboard. Pieces are displayed as images on these buttons.
 - Turn Label: Shows the current player's turn.
