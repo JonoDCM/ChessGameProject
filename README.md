@@ -1,8 +1,3 @@
-# GameProgramming02Sem
-AI Edge	Josue David Pavón Maldonado	93116997<br>
-AI Edge	Yáred Iessé Bustillo Medina	56963128<br>
-AI Edge	Jonathan David Concha Matas	85876200
-
 # Chess Game Implementation with Python and Tkinter
 
 # Brief Explanation of Chess and Tkinter
